@@ -4,7 +4,7 @@
 
 namespace ShapeLibrary
 {
-	class Circle
+	class Circle : public Shape
 	{
 	public:
 		Circle(IWindowAPI& _windowAPI);
@@ -17,9 +17,6 @@ namespace ShapeLibrary
 		void draw();
 
 	private:
-		IWindowAPI* windowAPI;
-		Color* fillColor;
-		Color* lineColor;
 		Point* center;
 		int radius;
 	};
